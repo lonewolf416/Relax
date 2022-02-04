@@ -72,9 +72,7 @@
                 const errorMessage = result.error.message;
                 alert("error occured: " + errorMessage);
               } else {
-                window.ReactNativeWebView.postMessage(
-                  JSON.stringify(orderData)
-                );
+                window.ReactNativeWebView.postMessage(JSON.stringify(result));
                 alert("card successfully tokenised: " + result.id);
               }
             },
